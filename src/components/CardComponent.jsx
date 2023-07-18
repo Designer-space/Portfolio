@@ -3,7 +3,7 @@ import React from 'react'
 const CardComponent = ({img, langs, title, disc, flex}) => {
   return (
     <>
-        <div className={`${flex} border border-[#ABB2BF] [ transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300 ]`}>
+        <div className={`${flex} border border-[#ABB2BF] [ transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-95 duration-300 ]`}>
             <div className="">
                 <img src={img} alt="" className='aspect-[4/2] object-cover' />
             </div>
