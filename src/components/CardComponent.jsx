@@ -3,9 +3,9 @@ import React from 'react'
 const CardComponent = ({img, langs, title, disc, flex}) => {
   return (
     <>
-        <div className={`${flex} border border-[#ABB2BF] [ transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-300 ]`}>
+        <div className={`${flex} border border-[#ABB2BF] [ transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300 ]`}>
             <div className="">
-                <img src={img} alt="" />
+                <img src={img} alt="" className='aspect-[4/2] object-cover' />
             </div>
             <div className="lang border-y border-[#ABB2BF] flex gap-2 p-2 ">{ langs.map((e) =>{
                 return <>

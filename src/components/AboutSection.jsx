@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 const AboutSection = () => {
   return (
     <section className="about-section container mx-auto px-5 lg:my-[5vw]">
-      <div className="flex items-center xl:ml-24">
+      <div className="flex items-center">
         <p className="text-[32px] font-medium w-[10ch]">
           <span className="text-[#C778DD] ">#</span>about-me
         </p>
