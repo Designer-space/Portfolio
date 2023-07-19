@@ -5,7 +5,7 @@ import FooterSection from "../components/FooterSection";
 const AboutPage = () => {
   return (
     <>
-      <div id="about" className="about container pt-28 mb-8">
+      <div id="about" className="about container pt-28 mb-8 custom-bg">
         <div className="">
           <h2 className="text-[2rem] font-semibold">
             <span className="text-[#C778DD]">/</span>about-me

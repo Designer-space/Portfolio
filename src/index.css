@@ -80,7 +80,23 @@ body{
   font-size: 1rem;
   font-weight: 400;
   color: var(--clr-neutral-300);
-  background-color: var(--clr-neutral-700);
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: var(--clr-neutral-700);
+    background-size:5px 5px;
+}
+
+.custom-bg{
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: var(--clr-neutral-700);
+    background-size:5px 5px;
 }
 
 ::-webkit-scrollbar{

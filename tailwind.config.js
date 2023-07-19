@@ -11,5 +11,8 @@ export default {
       ...defaultTheme.screens,
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

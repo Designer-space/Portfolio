@@ -36,7 +36,7 @@ const AboutSection = () => {
           </NavLink>
         </div>
         <div className="">
-          <img src={AboutImg} alt="" />
+          <img src={AboutImg} alt="" className='max-w-[35vw] ' />
         </div>
       </div>
     </section>
