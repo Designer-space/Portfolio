@@ -15,7 +15,7 @@ const Navbar = () => {
           </NavLink>
         </div>
         <nav
-          className={`flex duration-300 fixed ${!toggle ? 'top-0 right-[-100vw] bottom-0' : 'top-0 right-0 bottom-0'} w-full items-center flex-col justify-center md:static md:flex-row md:w-max text-[2rem] md:text-base`}
+          className={`flex custom-bg duration-300 fixed ${!toggle ? 'top-0 right-[-100vw] bottom-0' : 'top-0 right-0 bottom-0'} w-full items-center flex-col justify-center md:static md:flex-row md:w-max text-[2rem] md:text-base`}
         >
           <div className="nav-item p-4">
             <NavLink onClick={() => {setToggle(false)}}

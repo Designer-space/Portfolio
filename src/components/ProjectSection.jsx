@@ -9,28 +9,34 @@ import RightArrow from '../assets/rightArrow.svg'
 const ProjectSection = () => {
   const project = [
     {
-        flex: "flex-[1_1_25rem]",
-        id: 1,
-        img: project1,
-        langs: ["html", "css", "javascript"],
-        title: "Sunnyside agency landing page",
-        disc: "personal portfolio website template",
+      flex: "flex-[1_1_30rem]",
+      id: 1,
+      img: project3,
+      langs: ["html", "css", "javascript"],
+      title: "Portfolio Template",
+      disc: "A premium portfolio website template designed to showcase your creative work, experience, and skills. With elegant & modern design, it's perfect for web developers & freelancers.",
+      liveLink: "https://designer-space.github.io/portfolio-template/",
+      gitLink: "https://github.com/Designer-space/portfolio-template.git",
     },
     {
-        flex: "flex-[1_1_25rem]",
-        id: 2,
-        img: project2,
-        langs: ["html", "css", "javascript", "React"],
-        title: "Portfolio",
-        disc: "personal portfolio website template",
+      flex: "flex-[1_1_30rem]",
+      id: 3,
+      img: project1,
+      langs: ["html", "css", "javascript"],
+      title: "Sunnyside agency landing page",
+      disc: "Sunnyside agency landing page is simple and single landing page",
+      liveLink: "https://designer-space.github.io/sunnyside-agency-landing-page-main/",
+      gitLink: "https://github.com/Designer-space/sunnyside-agency-landing-page-main.git",
     },
     {
-        flex: "flex-[1_1_25rem]",
-        id: 3,
-        img: project3,
-        langs: ["html", "css", "javascript", "React"],
-        title: "Portfolio",
-        disc: "personal portfolio website template",
+      flex: "flex-[1_1_30rem]",
+      id: 2,
+      img: project2,
+      langs: ["html", "css", "javascript"],
+      title: "Space-Tourism-website",
+      disc: "Space Tourism website is for those who like to travel or know about space.",
+      liveLink: "https://designer-space.github.io/Space-Tourism-website/",
+      gitLink: "https://github.com/Designer-space/Space-Tourism-website.git",
     },
   ];
 
@@ -50,9 +56,9 @@ const ProjectSection = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 my-12">
-        {project.map(({id, img, langs, title, disc, flex}) =>{
+        {project.map(({id, img, langs, title, disc, flex, liveLink, gitLink}) =>{
             return <>
-                <CardComponent key={id} img={img} flex={ flex } langs={langs} title={title} disc={disc} />
+                <CardComponent key={id} img={img} flex={ flex } langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
             </>
         })}
       </div>

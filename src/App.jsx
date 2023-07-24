@@ -1,5 +1,6 @@
 import './App.css'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import {React, useEffect} from 'react'
+import { Routes, Route, useLocation} from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import Navbar from './Pages/Navbar'
@@ -11,6 +12,16 @@ import AboutMe from './Pages/AboutPage'
 
 function App() {
   // const location =  useLocation();
+
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
 
   // const [mousePosition, setMousePosition] = useState({
   //   x: 0,
@@ -48,6 +59,7 @@ function App() {
     {/* <motion.div className="cursor" variants={variants} animate={cursorVariant} /> */}
       <Navbar />
       <AnimatePresence mode='wait'>
+      <ScrollToTop />
         <Routes location={location} key={location.pathname} >
           <Route index element={<HomePage />} />
           <Route path='/project' element={ <Project /> } />
