@@ -141,14 +141,14 @@ const AboutPage = () => {
             </div>
             <div data-line-nr="21" className="code-l">
               <div className="dot">······</div>
-              {"{"} <span className="string">'04/2016-03/2017'</span>:
+              {"{"} <span className="string">'04/2016 - 03/2017'</span>:
               <span className="string">
                 {" "}
                 'Kanchan high school and Jr college - HSC, Commerce'
               </span>{" "}
               {"},"}
             </div>
-            <div data-line-nr="22" className="code-l">
+            {/* <div data-line-nr="22" className="code-l">
               <div className="dot">······</div>
               {"{"} <span className="string">'2008-2012'</span>:
               <span className="string">
@@ -157,19 +157,19 @@ const AboutPage = () => {
                 Bachelor of Engineering (inż.), Computer Science (IT)'
               </span>{" "}
               {"},"}
-            </div>
-            <div data-line-nr="23" className="code-l">
+            </div> */}
+            <div data-line-nr="22" className="code-l">
               <div className="dot">····</div>]
             </div>
-            <div data-line-nr="24" className="code-l">
+            <div data-line-nr="23" className="code-l">
               <div className="dot">··</div>
               {"}"}
             </div>
-            <div data-line-nr="25" className="code-l">
+            <div data-line-nr="24" className="code-l">
               <div className="dot">··</div>
               <span className="propname">skills</span>() {"{"}
             </div>
-            <div data-line-nr="26" className="code-l">
+            <div data-line-nr="25" className="code-l">
               <div className="dot">····</div>
               <div className="methods">return</div> [{" "}
               <span className="string">
@@ -178,11 +178,11 @@ const AboutPage = () => {
               </span>{" "}
               <span className="point-cursor"></span> ]
             </div>
-            <div data-line-nr="27" className="code-l">
+            <div data-line-nr="26" className="code-l">
               <div className="dot">··</div>
               {"}"}
             </div>
-            <div data-line-nr="28" className="code-l">
+            <div data-line-nr="27" className="code-l">
               {"}"}
             </div>
           </div>

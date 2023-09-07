@@ -7,15 +7,15 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="Primary-navigation fixed custom-bg w-full z-10 shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 py-5">
+    <header className="Primary-navigation fixed bg-[#282c33] w-full z-10 shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-4 py-5 md:py-3">
         <div className="logo">
           <NavLink onClick={() => {setToggle(false)}} className="flex items-center gap-2" to="/">
             <img src={Logo} alt="" /><span className="font-medium">Vinay</span>
           </NavLink>
         </div>
         <nav
-          className={`flex custom-bg duration-300 fixed ${!toggle ? 'top-0 right-[-100vw] bottom-0' : 'top-0 right-0 bottom-0'} w-full items-center flex-col justify-center md:static md:flex-row md:w-max text-[2rem] md:text-base`}
+          className={`flex bg-[#282c33] duration-300 fixed ${!toggle ? 'top-0 right-[-100vw] bottom-0' : 'top-0 right-0 bottom-0'} w-full items-center flex-col justify-center md:static md:flex-row md:w-max text-[2rem] md:text-base`}
         >
           <div className="nav-item p-4">
             <NavLink onClick={() => {setToggle(false)}}

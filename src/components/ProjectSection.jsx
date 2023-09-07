@@ -51,11 +51,11 @@ const ProjectSection = () => {
             <div className="line w-2/3 h-[2px] bg-[#C778DD]"></div>
         </div>
         <div className="text-white font-medium self-end xs:self-center">
-            <NavLink to="/Project"><span className='flex items-center'>view all <img src={ RightArrow } /></span></NavLink>
+            <NavLink to="/Project"><span className='flex items-center'>view all <img src={ RightArrow } alt='arrow pointing towards right' /></span></NavLink>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8 my-12">
+      <div className="flex flex-wrap justify-center gap-8 my-12 [&>div]:max-w-[728px] ">
         {project.map(({id, img, langs, title, disc, flex, liveLink, gitLink}) =>{
             return <>
                 <CardComponent key={id} img={img} flex={ flex } langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />

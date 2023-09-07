@@ -1,13 +1,41 @@
 import React from "react";
+import htmlLogo from "../assets/file-html.svg";
+import cssLogo from "../assets/file-css.svg";
+import jsLogo from "../assets/file-js.svg";
+import scssLogo from "../assets/file-scss.svg";
+import reactLogo from "../assets/file-react.svg";
+import tailwindLogo from "../assets/file-tailwind.svg";
+import bootstrapLogo from "../assets/file-bootstrap.svg";
 
 const languages = [
-  "HTML",
-  "CSS",
-  "SCSS",
-  "JAVASCRIPT",
-  "REACT",
-  "TAILWIND",
-  "BOOTSTRAP",
+  {
+    langs: "html",
+    logo: htmlLogo,
+  },
+  {
+    langs: "css",
+    logo: cssLogo,
+  },
+  {
+    langs: "javascript",
+    logo: jsLogo,
+  },
+  {
+    langs: "scss",
+    logo: scssLogo,
+  },
+  {
+    langs: "react",
+    logo: reactLogo,
+  },
+  {
+    langs: "tailwind",
+    logo: tailwindLogo,
+  },
+  {
+    langs: "bootstrap",
+    logo: bootstrapLogo,
+  },
 ];
 
 const SkillSection = () => {
@@ -20,14 +48,21 @@ const SkillSection = () => {
           </p>
           <span className="w-auto sm:grow md:grow-0 md:w-[50%] h-[2px] bg-[#C778DD]"></span>
         </div>
-        <div className="grid xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 p-8 mt-4">
-          {languages.map((lang) => {
+        <div className="w-full flex flex-wrap justify-center gap-8 my-12 ">
+          {languages.map(({ langs, logo }) => {
             return (
-              <>
-                <span className="text-[#FFFFFF] font-medium tracking-widest border px-8 py-4 text-[1rem] text-center [ transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#c778dd33] duration-300 ]">
-                  {lang}
-                </span>
-              </>
+            <div className="relative w-[256px] h-[58px] flex flex-wrap items-center border border-solid border-[#c778dd] bg-transparent overflow-hidden fs-[1rem] uppercase tracking-wide [ hover:bg-[#c778dd] group duration-300 ]">
+              <span className=" translate-x-[22px] text-[#FFFFFF] font-bold [ group-hover:text-transparent ]">
+                {langs}
+              </span>
+              <span className="ease-[cubic-bezier(0.5, 0.07, 0.14, 0.9)] duration-500 absolute translate-x-[205px] h-full w-[50px] bg-[#c778dd] flex items-center justify-center [ group-hover:w-[253px] group-hover:translate-x-0  ] ">
+                <img
+                  className={`w-[40px] fill-white`}
+                  src={logo}
+                  alt={langs}
+                />
+              </span>
+            </div>
             );
           })}
         </div>

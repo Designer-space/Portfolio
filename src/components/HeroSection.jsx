@@ -15,14 +15,14 @@ const HeroSection = () => {
           </p>
           <NavLink
             to="/Contact"
-            className="cursor-pointer btn font-medium text-[#FFFFFF] border border-[#C778DD] hover:bg-[#c778dd33] py-2 px-4"
+            className="cursor-pointer btn duration-700 font-medium text-[#FFFFFF] border border-[#C778DD] hover:bg-[#c778dd33] py-2 px-4"
           >
             Contact me!!
           </NavLink>
         </div>
         <div className="">
           <div className="">
-            <img src={HeroImg} alt="" />
+            <img src={HeroImg} alt="Profile Image" />
           </div>
           <div className="border border-[#FFFFFF] p-2 flex items-center gap-2">
             <div className="w-4 h-4 bg-[#C778DD] ml-2"></div>
