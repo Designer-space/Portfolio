@@ -8,10 +8,9 @@ const CardComponent = ({img, langs, title, disc, flex, live, git}) => {
                     <img src={img} alt="project image" className='aspect-[4/2] object-cover' />
                 </div>
             }
-            <div className="lang border-b border-[#ABB2BF] flex gap-2 p-2 ">{ langs.map((e) =>{
-                return <>
-                    <span>{e}</span>
-                </>
+            <div className="lang border-b border-[#ABB2BF] flex gap-2 p-2 ">{ 
+            langs.map((e, index) =>{
+                return <span key={index}>{e}</span>
             }) }</div>
             <div className="p-4 pb-8">
                 <h3 className='text-2xl font-medium text-white'>{title}</h3>

@@ -55,6 +55,7 @@ const ProjectPage = () => {
 
   const SmallProj = [
     {
+      id: 1,
       flex: "flex-[1_1_30%]",
       langs: ["html", "css"],
       title: "3-Column preview card component",
@@ -63,6 +64,7 @@ const ProjectPage = () => {
       gitLink: "https://github.com/Designer-space/3-column-preview-card-component.git",
     },
     {
+      id: 2,
       flex: "flex-[1_1_30%]",
       langs: ["html", "css", "js"],
       title: "Interactive rating component",
@@ -71,6 +73,7 @@ const ProjectPage = () => {
       gitLink: "https://github.com/Designer-space/interactive_rating_component.git",
     },
     {
+      id: 3,
       flex: "flex-[1_1_30%]",
       langs: ["html", "css"],
       title: "Stats preview card component",
@@ -79,6 +82,7 @@ const ProjectPage = () => {
       gitLink: "https://github.com/Designer-space/stats-preview-card.git",
     },
     {
+      id: 4,
       flex: "flex-[1_1_30%]",
       langs: ["html", "css"],
       title: "Product preview card component",
@@ -87,6 +91,7 @@ const ProjectPage = () => {
       gitLink: "https://github.com/Designer-space/responsive-card.git",
     },
     {
+      id: 5,
       flex: "flex-[1_1_30%]",
       langs: ["html", "css"],
       title: "Huddle landing page",
@@ -109,19 +114,16 @@ const ProjectPage = () => {
         </div>
         <div className="flex flex-wrap gap-8 ">
           {WebsiteTemp.map( ({id, flex, img, langs,title, disc, liveLink, gitLink}) => {
-            return<>
-              <CardComponent key={id} flex={ flex } img={img} langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
-            </>
+            return <CardComponent key={id} flex={ flex } img={img} langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
+
           } )}
         </div>
         <div className="">
           <h3 className='text-[2rem] font-semibold py-10'><span className='text-[#C778DD]'>#</span>small-components</h3>
         </div>
         <div className="flex flex-wrap gap-8 ">
-          {SmallProj.map( ({langs, flex, title, disc, liveLink, gitLink}) => {
-            return<>
-              <CardComponent flex={ flex } langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
-            </>
+          {SmallProj.map( ({langs, flex, title, disc, liveLink, gitLink, id}) => {
+            return <CardComponent key={id} flex={ flex } langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
           } )}
         </div>
       </div>

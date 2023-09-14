@@ -11,30 +11,37 @@ const languages = [
   {
     langs: "html",
     logo: htmlLogo,
+    id: 1,
   },
   {
     langs: "css",
     logo: cssLogo,
+    id: 2,
   },
   {
     langs: "javascript",
     logo: jsLogo,
+    id: 3,
   },
   {
     langs: "scss",
     logo: scssLogo,
+    id: 4,
   },
   {
     langs: "react",
     logo: reactLogo,
+    id: 5,
   },
   {
     langs: "tailwind",
     logo: tailwindLogo,
+    id: 6,
   },
   {
     langs: "bootstrap",
     logo: bootstrapLogo,
+    id: 7,
   },
 ];
 
@@ -49,9 +56,9 @@ const SkillSection = () => {
           <span className="w-auto sm:grow md:grow-0 md:w-[50%] h-[2px] bg-[#C778DD]"></span>
         </div>
         <div className="w-full flex flex-wrap justify-center gap-8 my-12 ">
-          {languages.map(({ langs, logo }) => {
+          {languages.map(({ langs, logo, id }) => {
             return (
-            <div className="relative w-[256px] h-[58px] flex flex-wrap items-center border border-solid border-[#c778dd] bg-transparent overflow-hidden fs-[1rem] uppercase tracking-wide [ hover:bg-[#c778dd] group duration-300 ]">
+            <div key={id} className="relative w-[256px] h-[58px] flex flex-wrap items-center border border-solid border-[#c778dd] bg-transparent overflow-hidden fs-[1rem] uppercase tracking-wide [ hover:bg-[#c778dd] group duration-300 ]">
               <span className=" translate-x-[22px] text-[#FFFFFF] font-bold [ group-hover:text-transparent ]">
                 {langs}
               </span>

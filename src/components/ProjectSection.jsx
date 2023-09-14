@@ -57,9 +57,7 @@ const ProjectSection = () => {
 
       <div className="flex flex-wrap justify-center gap-8 my-12 [&>div]:max-w-[728px] ">
         {project.map(({id, img, langs, title, disc, flex, liveLink, gitLink}) =>{
-            return <>
-                <CardComponent key={id} img={img} flex={ flex } langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
-            </>
+          return <CardComponent key={id} img={img} flex={ flex } langs={langs} title={title} disc={disc} live={liveLink} git={gitLink} />
         })}
       </div>
       </section>
